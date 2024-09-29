@@ -1,0 +1,54 @@
+* {box-sizing: border-box;}
+
+body {
+       display: grid;
+       grid-template-rows: auto auto;
+       grid-gap: 0;
+       justify-content: center;
+}
+
+.watch {
+       padding: 100px;
+       font-size: 100px;
+       grid-column: 1 / span 3;
+       user-select: none;
+}
+
+#modeChange {
+       position: absolute;
+       padding: 10px;
+       border-radius: 10px;
+       border: 1px solid black;
+       background: rgb(210, 210, 210);
+       left: 50%;
+       top: 60%;
+       transform: translate(-50%, -50%);
+       cursor: pointer;
+}
+
+#modeChange:hover {
+       background: rgb(200, 200, 200);
+}
+
+#modeChange:active {
+       background: rgb(170, 170, 170);
+}
+
+#mode, .timerInput {
+       position: absolute;
+}
+
+.timerInput {
+       display: none;
+       top: 200px;
+}
+
+.timerInput input[type=time] {
+       width: 200px;
+       padding: 5px 15px;
+}
+
+.timerInput #changeTimer {
+       margin-top: 20px;
+       display: block;
+}
